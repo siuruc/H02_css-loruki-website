@@ -1,0 +1,307 @@
+/* Navbar */
+
+.navbar {
+  height: 70px;
+}
+
+.navbar .flex {
+  justify-content: space-between;
+}
+
+.navbar a {
+  padding: 10px;
+}
+
+.navbar a:hover {
+  border-bottom: white 2px solid;
+}
+
+/* Home Main */
+
+.home-main {
+  position: relative;
+}
+
+.home-main-text {
+  animation: slideInFromLeft 1s ease-in;
+}
+
+.home-main .grid {
+  overflow: visible;
+}
+
+.home-main p {
+  margin-right: 20px;
+}
+
+.home-main-form {
+  position: relative;
+  top: 60px;
+  height: 350px;
+  width: 350px;
+  justify-self: center;
+  z-index: 100;
+  animation: slideInFromRight 1s ease-in;
+}
+
+.home-main .btn-primary {
+  border: #fff solid 1px;
+}
+
+.form-control input[type="text"],
+.form-control input[type="email"] {
+  outline: none;
+  border: none;
+  border-bottom: solid #333 1px;
+  width: 100%;
+  opacity: 50%;
+}
+
+.home-main::after,
+.home-main::before {
+  content: "";
+  position: absolute;
+  bottom: -70px;
+  background-color: #fff;
+  height: 100px;
+  left: 0;
+  right: 0;
+  transform: skewY(-3deg);
+}
+
+/* Stats */
+
+.stats {
+  margin-top: 60px;
+}
+
+.stats-text {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.stats .grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.stats i {
+  padding-bottom: 20px;
+}
+
+.stats p {
+  padding: 0;
+  margin-top: 0;
+}
+
+/* CLI */
+
+.cli .grid {
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.cli .grid img {
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+
+.cli .card {
+  padding: 10px 20px;
+}
+
+/* Languages */
+
+.language .flex {
+  flex-wrap: wrap;
+}
+
+.language .card {
+  transition: transform 0.2s ease-in;
+  width: 100px;
+  height: 150px;
+}
+
+.language .card:hover {
+  transform: translateY(-5px);
+}
+
+.language p {
+  margin-top: 0;
+}
+
+/* Features Main */
+.feature-main img,
+.docs-main img {
+  width: 200px;
+  justify-self: flex-end;
+}
+
+/* Features Sub-Main */
+.feature-sub-main img {
+  width: 300px;
+  justify-self: flex-end;
+}
+
+/* Features Card */
+
+.feature-card .grid {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: (3, 1fr);
+  padding: 10px;
+}
+
+.feature-card p {
+  padding-right: 15px;
+}
+
+.feature-card .grid > :nth-child(1) {
+  grid-column: 1/4;
+}
+
+.feature-card .grid > :nth-child(2) {
+  grid-column: 1/3;
+}
+
+.feature-card .card {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.feature-card i {
+  margin: 20px;
+}
+
+/* Docs Body */
+.docs-body .grid {
+  grid-template-columns: 1fr 2fr;
+}
+
+.docs-body .grid .card:nth-of-type(1) {
+  align-self: start;
+}
+
+.docs-body ul .sm {
+  padding-bottom: 5px;
+  margin: 5px auto;
+  border-bottom: rgba(0, 0, 0, 0.2) solid 0.5px;
+}
+
+.docs-body ul .lead {
+  padding-top: 10px;
+}
+
+.docs-body .card-main p.lead {
+  margin-top: 20px;
+}
+
+.docs-body .card-main .alert-success {
+  padding: 15px;
+}
+.docs-body .card-main .fas {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* Footer */
+.footer .grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.footer .social {
+  justify-self: flex-end;
+}
+
+.footer .social i {
+  padding: 10px;
+}
+
+.hidden {
+  visibility: hidden;
+  height: 0;
+}
+
+/* --------------- Animation --------------- */
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%)
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%)
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+
+/* --------------- Responsiveness --------------- */
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .home-main .grid,
+  .feature-main .grid,
+  .feature-sub-main .grid,
+  .docs-main .grid {
+    text-align: center;
+  }
+
+  .home-main .card,
+  .feature-main img,
+  .feature-sub-main img,
+  .docs-main img {
+    justify-self: center;
+  }
+
+  .stats .grid,
+  .stats .grid-3,
+  .cli .grid,
+  .feature-card .grid,
+  .docs-body .grid,
+  .footer .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-card .grid > :nth-child(1) {
+    grid-column: 1;
+  }
+
+  .feature-card .grid > :nth-child(2) {
+    grid-column: 1;
+  }
+
+  .footer .social {
+    justify-self: flex-start;
+  }
+}
+
+@media (max-width: 500px) {
+  .flex {
+    flex-direction: column;
+  }
+
+  .navbar {
+    height: 120px;
+  }
+
+  .navbar .flex {
+    justify-content: center;
+  }
+
+  .navbar nav .flex {
+    flex-direction: row;
+  }
+
+  .feature-card p {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}

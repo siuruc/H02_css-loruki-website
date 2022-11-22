@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loruki | Cloud Hosting For Everyone</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../Loruki/css/utilities.css" />
+    <link rel="stylesheet" href="../Loruki/css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="navbar bg-primary">
+      <div class="container flex">
+        <h1>Loruki.</h1>
+        <nav>
+          <ul class="flex">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="docs.html">Docs</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- Home Main -->
+    <section class="home-main bg-primary">
+      <div class="container grid">
+        <div class="home-main-text">
+          <h1 class="lg my-2">Easier Deployment</h1>
+          <p>
+            Deploy web apps of all kinds, from large scale enterprise APIs to
+            static website for individuals. Fill out the form to try a demo of
+            our platform
+          </p>
+          <div>
+            <a href="features.html" class="btn btn-primary my-1">Read More</a>
+          </div>
+        </div>
+        <div class="home-main-form card m-3 p-3">
+          <h1>Request a Demo</h1>
+          <form
+            name="contact"
+            method="POST"
+            netlify-honeypot="bot-field"
+            data-netlify="true"
+          >
+            <input type="hidden" name="form-name" value="contact" />
+            <p class="hidden">
+              <label
+                >Don't fill this out if you're human: <input name="bot-field"
+              /></label>
+            </p>
+            <div class="form-control">
+              <input
+                type="text"
+                placeholder="Name"
+                name="name"
+                required
+                class="sm my-2"
+              />
+            </div>
+            <div class="form-control">
+              <input
+                type="text"
+                placeholder="Company Name"
+                name="companyname"
+                required
+                class="sm my-2"
+              />
+            </div>
+            <div class="form-control">
+              <input
+                type="email"
+                placeholder="Email"
+                name="email"
+                required
+                class="sm my-2"
+              />
+            </div>
+            <input type="submit" value="Send" class="btn btn-primary my-1" />
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- Stats -->
+    <section class="stats py-3">
+      <div class="container">
+        <div class="stats-text">
+          <p class="text-center lead">
+            Welcome to the best platform for building applications of all types
+            with modern architecture and scaling
+          </p>
+        </div>
+        <div class="grid grid-3 p-3 text-center">
+          <div>
+            <i class="fas fa-server fa-3x"></i>
+            <h1>20,497,375</h1>
+            <p class="text-secondary lead">Deployments</p>
+          </div>
+          <div>
+            <i class="fas fa-upload fa-3x"></i>
+            <h1>975 TB</h1>
+            <p class="text-secondary lead">Published</p>
+          </div>
+          <div>
+            <i class="fas fa-project-diagram fa-3x"></i>
+            <h1>3,435,328</h1>
+            <p class="text-secondary lead">Projects</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CLI -->
+    <section class="cli py-3">
+      <div class="container grid">
+        <img src="/images/cli.png" alt="cli" />
+        <div class="card my-1">
+          <p>Easy to use, cross platform CLI</p>
+        </div>
+        <div class="card my-1">
+          <p>Deploy in seconds</p>
+        </div>
+      </div>
+    </section>
+    <!-- Cloud -->
+    <section class="cloud py-3 text-center bg-primary">
+      <div class="container grid">
+        <div class="cloud-text">
+          <h1 class="lg">Extreme Cloud Hosting</h1>
+          <p class="lead">
+            Cloud hosting like you've never seen. Fast, efficient and scalable
+          </p>
+          <a href="features.html" class="btn btn-dark m-1">Read More</a>
+        </div>
+        <img src="/images/cloud.png" alt="" />
+      </div>
+    </section>
+    <!-- Languages -->
+    <section class="language py-1">
+      <div class="container">
+        <h1 class="text-center py-3 md">Supported Languages</h1>
+        <div class="language-cards flex">
+          <div class="card p-1 m-1 text-center lead">
+            <p>Node.js</p>
+            <img src="/images/logos/node.png" alt="" />
+          </div>
+          <div class="card p-1 m-1 text-center lead">
+            <p>Python</p>
+            <img src="/images/logos/python.png" alt="" />
+          </div>
+          <div class="card p-1 m-1 text-center lead">
+            <p>C#</p>
+            <img src="/images/logos/csharp.png" alt="" />
+          </div>
+          <div class="card p-1 m-1 text-center lead">
+            <p>Ruby</p>
+            <img src="/images/logos/ruby.png" alt="" />
+          </div>
+          <div class="card p-1 m-1 text-center lead">
+            <p>PHP</p>
+            <img src="/images/logos/php.png" alt="" />
+          </div>
+          <div class="card p-1 m-1 text-center lead">
+            <p>Scala</p>
+            <img src="/images/logos/scala.png" alt="" />
+          </div>
+          <div class="card p-1 m-1 text-center lead">
+            <p>Clojure</p>
+            <img src="/images/logos/clojure.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer py-3 bg-dark">
+      <div class="container grid">
+        <div>
+          <h1>Loruki.</h1>
+          <p>Copyright &copy;2022</p>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="docs.html">Docs</a></li>
+          </ul>
+        </nav>
+        <div class="social">
+          <a href="#">
+            <i class="fab fa-github fa-2x"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-facebook fa-2x"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-instagram fa-2x"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-twitter fa-2x"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
