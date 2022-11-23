@@ -37,7 +37,7 @@
 .home-main-form {
   position: relative;
   top: 60px;
-  height: 350px;
+  height: 400px;
   width: 350px;
   justify-self: center;
   z-index: 100;
@@ -223,18 +223,18 @@
 
 @keyframes slideInFromLeft {
   0% {
-    transform: translateX(-100%)
+    transform: translateX(-100%);
   }
-  100%{
+  100% {
     transform: translateX(0);
   }
 }
 
 @keyframes slideInFromRight {
   0% {
-    transform: translateX(100%)
+    transform: translateX(100%);
   }
-  100%{
+  100% {
     transform: translateX(0);
   }
 }
@@ -298,6 +298,11 @@
 
   .navbar nav .flex {
     flex-direction: row;
+  }
+
+  .home-main-text {
+    max-width: 300px;
+    margin: auto;
   }
 
   .feature-card p {
